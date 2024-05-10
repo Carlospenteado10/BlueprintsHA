@@ -25,8 +25,7 @@ sequence:
   - service: media_player.volume_set
     metadata: {}
     data:
-      volume_level: "{{ volume }}"
-    target:
+   target:
       entity_id: "{{ onde_anunciar }}"
   - delay:
       hours: 0
