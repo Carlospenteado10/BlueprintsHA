@@ -21,18 +21,7 @@ fields:
     required: true
     default: []
     description: Escolha as Alexas
-sequence:
-  - service: media_player.volume_set
-    metadata: {}
-    data:
-   target:
-      entity_id: "{{ onde_anunciar }}"
-  - delay:
-      hours: 0
-      minutes: 0
-      seconds: 1
-      milliseconds: 0
-  - service: notify.alexa_media
+   - service: notify.alexa_media
     data:
       message: "{{ mensagem }}"
       data:
