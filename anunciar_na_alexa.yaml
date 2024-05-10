@@ -21,7 +21,7 @@ fields:
     required: true
     default: []
     description: Escolha as Alexas
-   - service: notify.alexa_media
+  - service: notify.alexa_media
     data:
       message: "{{ mensagem }}"
       data:
